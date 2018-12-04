@@ -6,7 +6,6 @@ public class CollectionTestSuite {
     @Before
     public void before() {
         System.out.println("Let's begin testing..");
-        System.out.println("__");
     }
     @After
     public void after() {

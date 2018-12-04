@@ -1,5 +1,7 @@
 package com.kodilla.testing.user;
 
+import java.util.Objects;
+
 public class SimpleUser {
     private String username;
     private String realname;
@@ -14,4 +16,5 @@ public class SimpleUser {
     public String getRealName() {
         return realname;
     }
+
 }

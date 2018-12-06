@@ -1,6 +1,8 @@
 package com.kodilla.testing.shape;
 import org.junit.*;
 
+import java.util.ArrayList;
+
 public class ShapeCollectorTestSuite {
     @Before
     public void before() {
@@ -24,9 +26,10 @@ public class ShapeCollectorTestSuite {
         ShapeCollector shapeCollector  = new ShapeCollector();
         Shape triangle = new Triangle(3,5,"Triangle");
         //when
-        boolean results = shapeCollector.addFigure(triangle);
+        shapeCollector.addFigure(triangle);
+        ArrayList<Shape> figure = shapeCollector.getShapes();
         //then
-        Assert.assertTrue(results);
+        Assert.assertTrue(figure.size() == 1);
     }
     @Test
     public void testRemoveFigure() {

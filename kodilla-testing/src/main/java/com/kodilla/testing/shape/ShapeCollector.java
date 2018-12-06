@@ -4,9 +4,8 @@ import java.util.*;
 public class ShapeCollector {
     ArrayList<Shape> figures = new ArrayList<>();
 
-    public boolean addFigure(Shape shape) {
+    public void addFigure(Shape shape) {
         figures.add(shape);
-        return false;
     }
     public boolean removeFigure(Shape shape) {
         return figures.remove(shape);

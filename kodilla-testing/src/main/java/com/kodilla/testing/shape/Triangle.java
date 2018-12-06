@@ -1,6 +1,5 @@
 package com.kodilla.testing.shape;
-import java.util.*;
-import java.io.*;
+
 
 class Triangle implements Shape{
     private int a;

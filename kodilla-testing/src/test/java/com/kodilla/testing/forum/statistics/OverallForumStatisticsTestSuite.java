@@ -143,7 +143,8 @@ public class OverallForumStatisticsTestSuite {
         overall.showStatistics();
         //then
         Assert.assertEquals(100, overall.getNumberOfUsers());
-        Assert.assertTrue(overall.getNumberOfUsers() == overall.getNumberOfComments());
+        Assert.assertTrue(overall.getNumberOfUsers() == 100);
+        Assert.assertTrue(overall.getNumberOfComments() == 100);
         Assert.assertTrue(overall.getAverageNumberOfCommentsPerUser() == 1);
     }
 }

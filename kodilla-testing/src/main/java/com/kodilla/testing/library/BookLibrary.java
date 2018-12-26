@@ -18,6 +18,7 @@ public class BookLibrary {
         return bookList;
     }
     public List<Book> listBooksInHandsOf(LibraryUser libraryUser) {
-        return null;//temporary solution
+        List<Book> usersBooks = new ArrayList<>();
+        return usersBooks;//temporary solution
     }
 }

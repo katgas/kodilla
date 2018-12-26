@@ -1,4 +1,5 @@
 package com.kodilla.testing.library;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -83,5 +84,36 @@ public class BookDirectoryTestSuite {
         // Then
         assertEquals(0, theListOfBooks10.size());
         verify(libraryDatabaseMock, times(0)).listBooksWithCondition(anyString());
+    }
+
+    //MOJE TESTY DO POPRAWY!!!
+    @Test
+    public void testWhenUserHasNoBooksRented() {
+        //given
+        LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        List<Book> usersBookList = new ArrayList<>(); //empty list of books
+        LibraryUser libraryUser = new LibraryUser("Kris", "Zachary", "12345");
+        when(libraryDatabaseMock.listBooksInHandsOf(libraryUser)).thenReturn(usersBookList);
+        //when
+        usersBookList.isEmpty();
+        //then
+        Assert.assertEquals(0, usersBookList.size());
+    }
+    @Test
+    public void testWhenUserRentedOneBook() {
+        //given
+        LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        List<Book> usersBookList = new ArrayList<>();
+        LibraryUser libraryUser = new LibraryUser("Kris", "Zachary", "12345");
+        when(libraryDatabaseMock.listBooksInHandsOf(libraryUser)).thenReturn(usersBookList);
+        //when
+        usersBookList.add(new Book("Pride and Prejudice", "Jane Austen", 1980));
+        //then
+        Assert.assertEquals(1, usersBookList.size());
+        //Assert.assertTrue(libraryUser.rentABook());
+    }
+    @Test
+    public void testWhenUserRentedFiveBooks() {
+
     }
 }

@@ -19,6 +19,7 @@ public class LibraryUser {
     public String getPeselId() {
         return peselId;
     }
+
     @Override
     public String toString() {
         return "LibraryUser{" +
@@ -42,6 +43,10 @@ public class LibraryUser {
         result = 31 * result + lastname.hashCode();
         result = 31 * result + peselId.hashCode();
         return result;
+    }
+
+    boolean rentABook(LibraryUser libraryUser, Book book) {
+        return true; //prowizorycznie
     }
 
 }

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.OverallForumStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-12-26T17:21:22" hostname="KASIA" time="0.22">
+  <properties/>
+  <testcase name="testWhenUsersCountEqualsZero" classname="com.kodilla.testing.forum.statistics.OverallForumStatisticsTestSuite" time="0.203"/>
+  <testcase name="testWhenCommentsCountIsLowerThanPostsCount" classname="com.kodilla.testing.forum.statistics.OverallForumStatisticsTestSuite" time="0.003"/>
+  <testcase name="testWhenCommentsCountEqualsZero" classname="com.kodilla.testing.forum.statistics.OverallForumStatisticsTestSuite" time="0.002"/>
+  <testcase name="testWhenCommentsCountIsGreaterThanPostsCount" classname="com.kodilla.testing.forum.statistics.OverallForumStatisticsTestSuite" time="0.002"/>
+  <testcase name="testWhenUsersCountEquals100" classname="com.kodilla.testing.forum.statistics.OverallForumStatisticsTestSuite" time="0.002"/>
+  <testcase name="testWhenPostsCountEquals1000" classname="com.kodilla.testing.forum.statistics.OverallForumStatisticsTestSuite" time="0.002"/>
+  <testcase name="testWhenPostsCountEqualsZero" classname="com.kodilla.testing.forum.statistics.OverallForumStatisticsTestSuite" time="0.002"/>
+  <system-out><![CDATA[This is the beginning of tests.
+
+Preparing to execute test number 1
+Number of users: 0
+Number of posts: 200
+Number of comments: 16
+Average number of comments per post: 0.08
+Average number of comments per user: 0.0
+Average number of posts per user: 0.0
+Test number 1 completed.
+
+Preparing to execute test number 2
+Number of users: 0
+Number of posts: 500
+Number of comments: 80
+Average number of comments per post: 0.16
+Average number of comments per user: 0.0
+Average number of posts per user: 0.0
+Test number 2 completed.
+
+Preparing to execute test number 3
+Number of users: 20
+Number of posts: 50
+Number of comments: 0
+Average number of comments per post: 0.0
+Average number of comments per user: 0.0
+Average number of posts per user: 2.5
+Test number 3 completed.
+
+Preparing to execute test number 4
+Number of users: 0
+Number of posts: 150
+Number of comments: 800
+Average number of comments per post: 5.333333333333333
+Average number of comments per user: 0.0
+Average number of posts per user: 0.0
+Test number 4 completed.
+
+Preparing to execute test number 5
+Number of users: 100
+Number of posts: 0
+Number of comments: 100
+Average number of comments per post: 0.0
+Average number of comments per user: 1.0
+Average number of posts per user: 0.0
+Test number 5 completed.
+
+Preparing to execute test number 6
+Number of users: 10
+Number of posts: 1000
+Number of comments: 0
+Average number of comments per post: 0.0
+Average number of comments per user: 0.0
+Average number of posts per user: 100.0
+Test number 6 completed.
+
+Preparing to execute test number 7
+Number of users: 0
+Number of posts: 0
+Number of comments: 800
+Average number of comments per post: 0.0
+Average number of comments per user: 0.0
+Average number of posts per user: 0.0
+Test number 7 completed.
+All tests are finished.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

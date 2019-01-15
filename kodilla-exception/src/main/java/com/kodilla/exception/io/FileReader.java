@@ -19,7 +19,7 @@ public class FileReader {
 
         } catch (IOException e) {
 
-            System.out.println("Oh no! Something went really wrong!" + e);
+            System.out.println("Something went wrong!");
 
         } finally {
 

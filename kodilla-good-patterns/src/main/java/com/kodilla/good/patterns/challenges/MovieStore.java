@@ -30,10 +30,18 @@ public class MovieStore {
 
         MovieStore movieStore = new MovieStore();
 
-        movieStore.getMovies().entrySet().stream()
+        //with exclamation mark at the end..
+        /*movieStore.getMovies().entrySet().stream()
                 .map(s -> s.getValue().toString())
-                .map(s -> s.substring(1).replaceFirst("]", " ! ").replace(",", " ! "))
-                .forEach(System.out::print);
+                .map(s -> s.substring(1).replaceFirst("]", " ! ").replace(", ", " ! " ))
+                .forEach(System.out::print);*/
+
+        String movieList = movieStore.getMovies().entrySet().stream()
+                .map(s -> s.getValue().toString())
+                .map(s -> s.substring(1).replaceFirst("]", "").replace(", ", " ! "))
+                .collect(Collectors.joining(" ! "));
+
+        System.out.println(movieList);
     }
 }
 

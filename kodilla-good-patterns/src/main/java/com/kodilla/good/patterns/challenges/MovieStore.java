@@ -36,12 +36,20 @@ public class MovieStore {
                 .map(s -> s.substring(1).replaceFirst("]", " ! ").replace(", ", " ! " ))
                 .forEach(System.out::print);*/
 
-        String movieList = movieStore.getMovies().entrySet().stream()
+        //without exclamation mark at the end..
+        /*String movieList = movieStore.getMovies().entrySet().stream()
                 .map(s -> s.getValue().toString())
                 .map(s -> s.substring(1).replaceFirst("]", "").replace(", ", " ! "))
                 .collect(Collectors.joining(" ! "));
 
-        System.out.println(movieList);
+        System.out.println(movieList);*/
+
+        //proper way to do it..
+        String movies = movieStore.getMovies().entrySet().stream()
+                .flatMap(s -> s.getValue().stream())
+                .collect(Collectors.joining(" ! "));
+
+        System.out.println(movies);
     }
 }
 

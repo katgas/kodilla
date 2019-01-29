@@ -53,7 +53,7 @@ public class DbManagerTestSuite {
         //then
         int counter = 0;
         while(rs.next()) {
-            System.out.println("The users with at least 2 posts:\n"+
+            System.out.println("Users with at least 2 posts:\n"+
                     rs.getString("FIRSTNAME") + " " +
                     rs.getString("LASTNAME"));
             counter++;
